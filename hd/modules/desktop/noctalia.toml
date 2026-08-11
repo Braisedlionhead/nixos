@@ -1,0 +1,196 @@
+[bar.default]
+center = [ "group:g1" ]
+end = [
+    "media",
+    "tray",
+    "clipboard",
+    "spacer_4",
+    "ram",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "spacer_5",
+    "caffeine",
+    "session"
+]
+margin_ends = 50
+start = [ "launcher", "wallpaper", "spacer_2", "workspaces", "spacer_3", "active_window" ]
+
+    [[bar.default.capsule_group]]
+    border = "outline"
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "clock", "notifications" ]
+    opacity = 1.0
+    padding = 6.0
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+auto_hide = true
+background_opacity = 0.0
+launcher_position = "start"
+layer = "overlay"
+magnification = false
+main_axis_padding = 10
+pinned = [ "firefox", "google-chrome", "code", "idea", "dev.zed.Zed", "org.telegram.desktop", "dbx" ]
+reserve_space = false
+shadow = false
+show_instance_count = false
+show_running = false
+
+[hot_corners]
+delay_ms = 200
+enabled = true
+
+    [hot_corners.top_right]
+    action = "control_center"
+
+[idle.behavior.lock]
+action = "lock"
+enabled = true
+timeout = 300
+
+[idle.behavior.screen-off]
+action = "screen_off"
+enabled = true
+timeout = 330
+
+[lockscreen]
+fingerprint = false
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-2"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 220.0
+    output = "HDMI-A-2"
+    rotation = 0.0
+    type = "clock"
+
+[notification]
+scale = 0.70000000298023224
+
+[shell]
+app_icon_color = "on_surface_variant"
+app_icon_colorize = true
+font_family = "Noto Sans CJK SC"
+password_style = "random"
+polkit_agent = false
+settings_show_advanced = true
+telemetry_enabled = false
+
+    [shell.panel]
+    clipboard_position = "bottom_center"
+
+[system.monitor]
+gpu_poll_seconds = 0
+
+[theme]
+builtin = "Tokyo-Night"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+[weather]
+enabled = false
+
+[widget.battery]
+enabled = false
+
+[widget.bluetooth]
+enabled = false
+
+[widget.brightness]
+enabled = false
+
+[widget.caffeine]
+enabled = false
+icon_color = "on_surface_variant"
+
+[widget.clipboard]
+enabled = false
+
+[widget.control-center]
+enabled = false
+
+[widget.media]
+enabled = false
+
+[widget.network]
+enabled = false
+
+[widget.notifications]
+hide_when_no_unread = true
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.spacer_3]
+type = "spacer"
+
+[widget.spacer_4]
+type = "spacer"
+
+[widget.spacer_5]
+type = "spacer"
+
+[widget.volume]
+enabled = false
+
+[widget.wallpaper]
+enabled = false
+
+[widget.workspaces]
+hide_when_empty = true
+scroll_repeat = "steps"

@@ -1,0 +1,15 @@
+# Rime user overrides: Rime Ice full Pinyin plus Kagiroi Japanese input.
+patch:
+  __include: rime_ice_suggestion:/
+
+  schema_list:
+    - schema: rime_ice
+    - schema: kagiroi
+
+  # Ctrl+` opens the full schema menu. F4 switches directly between the two.
+  switcher/hotkeys:
+    - Control+grave
+    - Control+Shift+grave
+
+  key_binder/bindings/+:
+    - { when: always, select: .next, accept: F4 }
